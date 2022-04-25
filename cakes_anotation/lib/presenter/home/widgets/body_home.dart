@@ -8,29 +8,34 @@ class BodyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Cakes Anotation'),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(20),
-                child: ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.purple),
-                    fixedSize: MaterialStateProperty.all(const Size(300, 100)),
-                  ),
-                  onPressed: () {},
-                  child: const Text(
-                    "Adicionar Novo Pedido",
-                    style: TextStyle(fontSize: 25), 
+      appBar: AppBar(
+        title: const Text('Cakes Anotation'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.purple),
+                  fixedSize: MaterialStateProperty.all(const Size(300, 100)),
+                ),
+                onPressed: () {},
+                child: const Text(
+                  "Adicionar Novo Pedido",
+                  style: TextStyle(
+                    fontFamily: "Barlow",
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
                   ),
                 ),
               ),
-            ],
-          ),
-        ));
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
