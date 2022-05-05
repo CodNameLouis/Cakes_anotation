@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(cakes_anotation LANGUAGES CXX)
+project(project0 LANGUAGES CXX)
 
-set(BINARY_NAME "cakes_anotation")
+set(BINARY_NAME "project0")
 
 cmake_policy(SET CMP0063 NEW)
 
