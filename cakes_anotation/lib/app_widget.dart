@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:project0/presenter/home/home_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -7,9 +8,9 @@ class AppWidget extends StatelessWidget {
 
    @override
    Widget build(BuildContext context) {
-       return Scaffold(
-           appBar: AppBar(title: const Text('Agenda'),),
-           body: const HomePage(),
+       return const GetMaterialApp(
+         debugShowCheckedModeBanner: false,
+           home: HomePage(),
        );
   }
 }
