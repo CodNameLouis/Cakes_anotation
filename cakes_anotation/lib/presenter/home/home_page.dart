@@ -7,6 +7,8 @@ import 'widgets/body_home.dart';
 class HomePage extends GetView<HomeController> {
   const HomePage({Key? key}) : super(key: key);
 
+  static const route = '/';
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
