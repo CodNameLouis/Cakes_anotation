@@ -28,36 +28,33 @@ class BodyHome extends StatelessWidget {
           ),
           Column(
             children: [
-              Column(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(25),
-                    margin: const EdgeInsets.all(50),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(13.0),
-                        color: AppColors.kColorPrimary),
-                    child: Column(
-                      children: const [
-                        Text(
-                          "Cakes Anotation",
-                          style: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.kTextColor,
-                          ),
-                        ),
-                        Text(
-                          "Serviços em andamento: 4",
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.blueAccent,
-                          ),
-                        )
-                      ],
+              Container(
+                padding: const EdgeInsets.all(25),
+                margin: const EdgeInsets.all(50),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(13.0),
+                    color: AppColors.kColorPrimary),
+                child: Column(
+                  children:   [
+                    const Text(
+                      "Cakes Anotation",
+                      style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.kTextColor,
+                      ),
                     ),
-                  ),
-                ],
+                    const Text(
+                      "Serviços em andamento: 4",
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.blueAccent,
+                      ),
+                    ),
+                    TextFormField(),
+                  ],
+                ),
               ),
             ],
           ),

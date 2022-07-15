@@ -6,14 +6,14 @@ import '../models/defaults/api_error_default_model.dart';
 import '../models/defaults/api_response_model.dart';
 import '../models/defaults/default_response_model.dart';
 
-class InfoCepRepository {
+class ZipCodeRepository {
   final GetConnect _connect;
-  const InfoCepRepository(this._connect);
+  const ZipCodeRepository(this._connect);
 
   Future<ApiResponseModel<List<ZipCodeDataModel>>> getInfoCep(
-    String cep,
+    String zipCode,
   ) async {
-    final _response = await _connect.get('${ApiEndpoints.infoCep}/$cep');
+    final _response = await _connect.get('${ApiEndpoints.zipCode}/$zipCode');
 
     final _responseModel = DefaultResponseModel.fromMap(_response.body);
     if (_responseModel.success) {
